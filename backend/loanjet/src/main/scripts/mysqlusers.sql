@@ -1,0 +1,12 @@
+DROP DATABASE IF EXISTS loanjetdb;
+DROP USER IF EXISTS `loanjetadmin`@`%`;
+DROP USER IF EXISTS `loanjetuser`@`%`;
+
+CREATE DATABASE IF NOT EXISTS loanjetdb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+CREATE USER IF NOT EXISTS `loanjetadmin`@`%` IDENTIFIED WITH mysql_native_password BY 'password';
+GRANT SELECT, CREATE, INSERT, UPDATE, DELETE, DROP, REFERENCES, INDEX, ALTER, EXECUTE, CREATE VIEW, SHOW VIEW, CREATE ROUTINE, ALTER ROUTINE, EVENT, TRIGGER ON `loanjetdb`.* TO `loanjetadmin`@`%`;
+
+CREATE USER IF NOT EXISTS `loanjetuser`@`%` IDENTIFIED WITH mysql_native_password BY 'password';
+GRANT SELECT, INSERT, UPDATE, DELETE, SHOW VIEW ON `loanjetdb`.* TO `loanjetuser`@`%`;
+FLUSH PRIVILEGES;
