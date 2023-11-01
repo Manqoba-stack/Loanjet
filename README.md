@@ -20,7 +20,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/your-username/peer-to-peer-fiat-lending-app.git
+git clone https://github.com/your-Manqoba-stack/peer-to-peer-fiat-lending-app.git
 Navigate to the project directory:
 
 bash
@@ -66,7 +66,7 @@ License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 Contact
-If you have any questions or need assistance, please contact Your Name.
+If you have any questions or need assistance, please contact Your Manqoba Makhoba, manyoba1997@gmail.com.
 
 Acknowledgments
 Special thanks to the open-source community and all the libraries and tools that made this project possible.
